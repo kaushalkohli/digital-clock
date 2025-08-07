@@ -7,6 +7,7 @@ export default function Clock() {
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
+    console.log('data')
 
     return () => clearInterval(timer);
   }, []);
