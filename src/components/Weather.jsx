@@ -30,9 +30,10 @@ export default function Weather() {
     },[lat, lon])
 
   return (
-    <div>
+    <div className='text-center'>
         {data && data.main && (
-            <p>{data.weather[0].description} : {Math.round(data.main.temp - 273)} <sup>0</sup>C</p>
+            
+            <p>Weather<br />{data.weather[0].description} : {Math.round(data.main.temp - 273)} <sup>0</sup>C</p>
         )}
     </div>
   )
